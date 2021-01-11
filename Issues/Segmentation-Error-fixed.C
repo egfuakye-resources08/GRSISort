@@ -7,7 +7,9 @@ sudo apt-get install valgrind
 
 STEP 2 
 
-G_SLICE=always-malloc G_DEBUG=gc-friendly  valgrind -v --tool=memcheck --leak-check=full --num-callers=40 --log-file=valgrind.log grsiproof Name-of-fragment-file  EnergyFragmentSelector.C
+G_SLICE=always-malloc G_DEBUG=gc-friendly  valgrind -v --tool=memcheck --leak-check=full --num-callers=40 
+
+--log-file=valgrind.log grsiproof Name-of-fragment-file  EnergyFragmentSelector.C
 
 
 
